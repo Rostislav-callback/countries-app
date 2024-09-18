@@ -1,0 +1,73 @@
+.home-page-container {
+    height: calc(100vh - 144px);
+    padding: 40px 20px;
+    background-color: #fcfcfc;
+    display: flex;
+    gap: 25px;
+}
+
+.home-page-block {
+    width: 50%;
+}
+
+.home-page-all-countries {
+    width: 100%;
+}
+
+.home-page-random-countries {
+    width: 100%;
+}
+
+.country-input {
+    height: 26px;
+    width: 240px;
+    border-radius: 5px;
+    border: 1px solid #818181;
+    padding: 5px 10px;
+    background-color: #f3f3f3;
+}
+
+.country-input:focus {
+    outline: none;
+}
+
+.countries-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.country-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.country-link:hover {
+    text-decoration: underline;
+    color: rgb(114, 166, 224);
+}
+
+.country-list {
+    height: 30vh;
+    overflow: auto;
+    margin-top: 15px;
+}
+
+.country-list-item {
+    border-top: 1px solid #818181;
+}
+
+.random-countries-table {
+    width: 100%;
+}
+
+.table-titles > th {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.table-content > td {
+    padding-right: 20px;
+    font-size: 14px;
+}
