@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { filter, from, map, Observable, switchMap, take, tap } from 'rxjs';
+import { Observable, switchMap, tap } from 'rxjs';
 
 import { CountriesService } from './services/countries.service';
 import { Country, Holiday, RandomCountriesData } from './interfaces/countries.interface';
