@@ -1,1 +1,30 @@
-ggg
+<div *ngIf="currentCountryData$ | async" class="holydays-container">
+    <mat-card class="holydays-block">
+        <mat-card-header class="current-page-title">
+            {{currentCountry.name}} ({{currentCountry.countryCode}})
+        </mat-card-header>
+        <mat-card-content>
+            <mat-tab-group headerPosition="below" 
+                (selectedTabChange)="change($event)"
+                [selectedIndex]="currentTabIndex"
+                class="holydays-tab">
+                <ng-container *ngFor="let year of years">
+                    <mat-tab  [label]="year">
+                        <table class="countries-table">
+                            <tr class="table-titles">
+                              <th>Holyday</th>
+                              <th>Type</th>
+                              <th>Date</th>
+                            </tr>
+                            <tr *ngFor="let country of holidaysData" class="table-content">
+                              <td>{{country.name}}</td>
+                              <td>{{country.types[0]}}</td>
+                              <td>{{country.date}}</td>
+                            </tr>
+                          </table>
+                    </mat-tab>
+                </ng-container>
+            </mat-tab-group>
+        </mat-card-content>
+    </mat-card>
+</div>

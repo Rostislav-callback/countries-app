@@ -11,6 +11,7 @@ import { Country, Holiday } from '../interfaces/countries.interface';
 })
 
 export class CountriesService {
+
   constructor(private http: HttpClient) {}
   
   getAllCountries(): Observable<Country[]> {
@@ -19,5 +20,9 @@ export class CountriesService {
 
   getNextPublicHolidays(countryCode: string): Observable<Holiday[]> {
     return this.http.get<Holiday[]>(`https://date.nager.at/api/v3/NextPublicHolidays/${countryCode}`);
+  }
+
+  getHolidaysByYear(countryCode: string, year: number): Observable<Holiday[]> {
+    return this.http.get<Holiday[]>(`https://date.nager.at/api/v3/PublicHolidays/${year}/${countryCode}`);
   }
 }
