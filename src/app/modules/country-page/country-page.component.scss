@@ -1,0 +1,38 @@
+.holydays-container {
+    height: calc(100vh - 144px);
+    padding: 40px 20rem;
+    background-color: #fcfcfc;
+
+}
+
+.holydays-block {
+    height: 100%;
+}
+
+.holydays-tab {
+    height: 95%;
+}
+
+.countries-table {
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+}
+
+.current-page-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.table-titles > th {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.table-content > td {
+    padding-right: 20px;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
